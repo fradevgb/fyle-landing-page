@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap');
+body {
+  background-color: hsl(218, 28%, 13%);
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: hsl(217, 28%, 15%);
+  background-image: url('images/bg-curvy-desktop.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-bottom: 80px;
+}
+
+/* Nav Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.nav-ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-ul li a {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Hero Stylling */
+.hero {
+  margin: 20px auto;
+  max-width: 100%;
+  width: 600px;
+  text-align: center;
+}
+
+h1 {
+  line-height: 1.5;
+}
+
+.btn {
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to right,
+    hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%)
+  );
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px 60px;
+}
+
+/* Features Style */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  margin: 40px;
+  width: 400px;
+  text-align: center;
+}
+
+/* Info style */
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info .productive-img {
+  margin-right: 50px;
+  width: 400px;
+}
+
+.info-text {
+  flex: 1;
+  width: 400px;
+}
+
+.cyan-link {
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  color: hsl(176, 68%, 64%);
+  text-decoration: none;
+}
+
+.cyan-link img {
+  width: 16px;
+}
+
+/* Testimonials style */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.testimonial {
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.testimonial .user {
+  display: flex;
+  margin-top: 30px;
+}
+
+.testimonial .user img {
+  border-radius: 50%;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.testimonial .user h5 {
+  margin: 0;
+}
+
+/* Form styling */
+form {
+  background-color: hsl(217, 28%, 15%);
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto -100px;
+  padding: 40px;
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  width: 800px;
+  z-index: 1;
+}
+
+form h1 {
+  margin: 0 auto;
+}
+
+form p {
+  margin: 30px 0;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-control input {
+  flex: 1;
+  border-radius: 50px;
+  border: 0;
+  padding: 16px 60px;
+  margin: 20px 20px 20px 0;
+}
+
+/* Footer */
+footer {
+  background-color: hsl(216, 53%, 9%);
+  padding: 150px 0 30px;
+}
+
+footer .flex {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.footer-section p {
+  margin: 0 0 0 10px;
+}
+
+.footer-section ul {
+  margin: 0;
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+.footer-section ul a {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.footer-section .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section .social-icons a {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    width: 100%;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .nav-ul li a {
+    padding: 10px;
+  }
+
+  header {
+    background-image: url('images/bg-curvy-desktop.svg');
+    padding-bottom: 0;
+  }
+
+  .info .productive-img {
+    margin: 0 auto;
+  }
+
+  .form-control input {
+    margin: 20px 0;
+  }
+
+  .footer-section {
+    flex: auto;
+    width: 100%;
+  }
+}
